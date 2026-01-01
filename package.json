@@ -1,0 +1,23 @@
+{
+  "name": "tubezilla",
+  "version": "1.0.0",
+  "description": "app like youtube",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "tubezilla"
+  ],
+  "author": "Abhishek Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.1",
+    "nodemon": "^3.1.11"
+  }
+}
