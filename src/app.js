@@ -16,4 +16,16 @@ app.use(express.static('public')) //for public files
 app.use(cookieParser()) // parses cookie sent by client we can access and manipulate cookies 
 
 
+//routes import 
+import  userRouter from './routes/user.routes.js'
+
+
+//routes declaration
+
+app.use("/api/v1/users",userRouter)
+
+
+
+
+
 export {app}
