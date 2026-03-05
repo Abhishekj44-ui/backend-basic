@@ -49,10 +49,9 @@ const userSchema = new Schema({
 },{timestamps:true})
 
 
-userSchema.pre("save", async function(next) {
-    if(! this.isModified("password")) return next(); //if password is not modified then return   
+userSchema.pre("save", async function() {
+    if(! this.isModified("password")) ; //if password is not modified then return   
     this.password = await bcrypt.hash(this.password,10);
-    next();
 })
 
 userSchema.methods.isPasswordCorrect = async function(password){ // this is a custom method
