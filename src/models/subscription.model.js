@@ -14,3 +14,5 @@ const subscriptionSchema = new Schema({
 
 
 export const Subscription = mongoose.model("Subscription",subscriptionSchema)
+
+// in subscrition model we have 2 fileds one is subscriber and other is channel subscried by subscriber 
